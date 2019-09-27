@@ -17,6 +17,8 @@
 		4BA09732233CD8AF008D8B43 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4BA09730233CD8AF008D8B43 /* sound.mp3 */; };
 		4BA09733233CD8AF008D8B43 /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4BA09731233CD8AF008D8B43 /* maruSound.mp3 */; };
 		4BA09738233CDA65008D8B43 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA09737233CDA65008D8B43 /* NextViewController.swift */; };
+		4BA0973A233DA22B008D8B43 /* imagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA09739233DA22B008D8B43 /* imagesModel.swift */; };
+		4BA0973C233DA8EA008D8B43 /* imagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0973B233DA8EA008D8B43 /* imagesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4BA09730233CD8AF008D8B43 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		4BA09731233CD8AF008D8B43 /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		4BA09737233CDA65008D8B43 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		4BA09739233DA22B008D8B43 /* imagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesModel.swift; sourceTree = "<group>"; };
+		4BA0973B233DA8EA008D8B43 /* imagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		4BA09734233CD95D008D8B43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4BA09739233DA22B008D8B43 /* imagesModel.swift */,
+				4BA0973B233DA8EA008D8B43 /* imagesList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				4BA09738233CDA65008D8B43 /* NextViewController.swift in Sources */,
 				4BA0971B233CD677008D8B43 /* AppDelegate.swift in Sources */,
 				4BA0971D233CD677008D8B43 /* SceneDelegate.swift in Sources */,
+				4BA0973A233DA22B008D8B43 /* imagesModel.swift in Sources */,
+				4BA0973C233DA8EA008D8B43 /* imagesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
