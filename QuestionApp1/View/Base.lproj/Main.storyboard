@@ -23,11 +23,17 @@
                                 <rect key="frame" x="45" y="547" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="maru"/>
+                                <connections>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1W-JA-HuU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU1-8k-yhF">
                                 <rect key="frame" x="239" y="547" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="batsu"/>
+                                <connections>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xB-eQ-coa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最高得点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52X-zn-EU7">
                                 <rect key="frame" x="38" y="737" width="93" height="57"/>
@@ -49,6 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="9ey-Jq-Zmw" id="S8k-IQ-lFd"/>
+                        <outlet property="maxScoreLabel" destination="w5H-b1-uPG" id="GES-Di-dIN"/>
                         <segue destination="RZZ-2a-Ue6" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" id="ujA-74-25T"/>
                     </connections>
                 </viewController>
@@ -96,6 +103,9 @@
                                 <rect key="frame" x="143" y="395" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
+                                <connections>
+                                    <action selector="back:" destination="RZZ-2a-Ue6" eventType="touchUpInside" id="sGV-iP-2Sq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

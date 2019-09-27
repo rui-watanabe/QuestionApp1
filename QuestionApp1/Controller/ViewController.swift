@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,NowScoreDelegate {
+
+    
     
     
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var maxScoreLabel: UILabel!
+    
     
     var correctCount = 0
     var wrongCount = 0
@@ -38,18 +41,24 @@ class ViewController: UIViewController {
         wrongCount = 0
         questionNumber = 0
         
-        imageView.image = UIImage(named: ImagesList.list[0].imageText)
+        imageView.image = UIImage(named: imagesList.list[0].imageText)
+        
+        if UserDefaults.standard.object(forKey: "beforeCount") != nil{
+            
+            maxScore = UserDefaults.standard.object(forKey: "begforeCount") as! Int
+            
+        }
+        
+        maxScoreLabel.text = String(maxScore)
     }
     
     
     @IBAction func answer(_ sender: Any) {
-        
+    
         if (sender as AnyObject).tag == 1{
             
             pickedAnswer = true
             
-            print("正解")
-            correctCount = correctCount + 1
             
             
             
@@ -71,8 +80,11 @@ class ViewController: UIViewController {
         let correctAnswer = imagesList.list[questionNumber].answer
         if correctAnswer == pickedAnswer{
             
+            correctCount = correctCount + 1
             print("正解")
+            
         }else{
+            
             print("間違い")
             wrongCount = wrongCount + 1
             
@@ -92,6 +104,10 @@ class ViewController: UIViewController {
         }
     }
     
+    func nowScore(score: Int) {
+        maxScoreLabel.text = String(score)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "next"{
@@ -99,6 +115,7 @@ class ViewController: UIViewController {
             
             nextVC.correctedCount = correctCount
             nextVC.wrongCount = wrongCount
+            nextVC.delegate = self
             
         }
     }

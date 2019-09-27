@@ -15,6 +15,7 @@ class ImagesList{
     init(){
         
         list.append(imagesModel(imageName: "0", correctOrNot: true))
+        list.append(imagesModel(imageName: "1", correctOrNot: false))
         list.append(imagesModel(imageName: "2", correctOrNot: false))
         list.append(imagesModel(imageName: "3", correctOrNot: false))
         list.append(imagesModel(imageName: "4", correctOrNot: true))
