@@ -24,7 +24,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="maru"/>
                                 <connections>
-                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1W-JA-HuU"/>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gmm-4J-Vtg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU1-8k-yhF">
@@ -32,7 +32,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="batsu"/>
                                 <connections>
-                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xB-eQ-coa"/>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCA-AN-xCR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最高得点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52X-zn-EU7">
@@ -54,8 +54,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="9ey-Jq-Zmw" id="S8k-IQ-lFd"/>
-                        <outlet property="maxScoreLabel" destination="w5H-b1-uPG" id="GES-Di-dIN"/>
+                        <outlet property="imageView" destination="9ey-Jq-Zmw" id="u1i-ei-wgP"/>
+                        <outlet property="maxScoreLabel" destination="w5H-b1-uPG" id="ILY-zl-JeS"/>
                         <segue destination="RZZ-2a-Ue6" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" id="ujA-74-25T"/>
                     </connections>
                 </viewController>
